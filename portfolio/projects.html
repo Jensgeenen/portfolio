@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects – Jens Geenen</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="logo">Jens Geenen</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card fancy-hover">
+          <img src="img/projects/chargepoint.png" alt="Project 4.0 " class="project-image">
+          <h3>Project 4.0 </h3>
+          <p class="project-date">2024</p>
+          <p><strong>Context:</strong>  
+            Elision, located at the Corda Campus in Hasselt, asked for help with the increasing number of electric vehicles and the lack of available charging stations.
+          </p>
+          <p><strong>Realisatie:</strong>  
+            We created an app called <em>Chargepoint</em> that allows users to see which charging spots are available using a GoPro and AI model. If no spot is available, users can join a queue and swap turns. The system also shows peak usage hours.
+            <br><br>
+            My role was to set up and configure the IoT component: a camera takes a photo every 20 seconds, processes it, and uploads it to an Amazon S3 bucket where the AI fetches and analyzes it.
+          </p>
+          <p><em>What I learned:</em> Working with Amazon S3, image preprocessing, and integrating hardware with cloud services for real-time AI applications.</p>
+          <a href="docs/chargepoint.pdf" class="project-button" target="_blank">📄 View Document</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fancy-hover">
+          <img src="img/projects/gladiolen.png" alt="Project Gladiolen" class="project-image">
+          <h3>Project Gladiolen</h3>
+          <p class="project-date">2025</p>
+          <p><strong>Context:</strong>  
+            This project aimed to track the collection of reusable cups at the Gladiolen music festival, using smart bins with sensors and a real-time dashboard for organizers.
+          </p>
+          <p><strong>Realisatie:</strong>  
+            We built a system that registers when a cup is placed into a bin and sends data to the cloud. The system displayed statistics and live bin statuses through a web dashboard.
+            <br><br>
+            I integrated the sensor system, handled cloud connectivity via MQTT, and built the database structure behind the dashboard.
+          </p>
+          <p><em>What I learned:</em> Combining real-time IoT data with user-friendly web dashboards and managing data over a busy wireless network.</p>
+          <a href="docs/gladiolen.pdf" class="project-button" target="_blank">📄 View Document</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card fancy-hover">
+  <img src="img/projects/lora.jpg" alt="Lora the Explorer – Emergency Balloon with LoRa" class="project-image">
+  <h3>Lora the Explorer</h3>
+  <p class="project-date">2023</p>
+  <p><strong>Context:</strong>  
+    This project explored the use of LoRaWAN communication in emergency situations. We developed a payload launched via a weather balloon that could provide long-range communication during disasters or power outages.
+  </p>
+  <p><strong>Realisatie:</strong>  
+    The balloon carried a custom-built transmitter using LoRa to broadcast data from high altitudes. It simulated a mobile base station for crisis scenarios where no infrastructure is available. The system was tested live, and real-time data (GPS + telemetry) was successfully sent to ground stations via The Things Network.
+  </p>
+  <p><em>What I learned:</em>  
+    This project taught me how to work with LoRa hardware, antenna placement, telemetry encoding, and how to build fault-tolerant systems for unpredictable environments.
+  </p>
+  <a href="https://www.youtube.com/watch?v=jV-Rveh8rAU" class="project-button" target="_blank">🎈 Watch Project Video</a>
+</article>
+
+
+        <!-- Project 4 -->
+        <article class="project-card fancy-hover">
+          <img src="img/projects/pompoen.png" alt="PomPaul Project" class="project-image">
+          <h3>PomPaul – Smart Greenhouse</h3>
+          <p class="project-date">2023</p>
+          <p><strong>Context:</strong>  
+            In our second year IoT course, we were asked to automate the pumpkin greenhouse of a Thomas More teacher. He participates yearly in giant pumpkin contests and needed help improving growing conditions.
+          </p>
+          <p><strong>Realisatie:</strong>  
+            We installed sensors to monitor temperature, CO₂ and light, and programmed logic to open windows or doors when needed. Water is pumped at night and stored in large tanks to warm up during the day. We built an app to display real-time graphs and allow manual control. A livestream was also added.
+            
+           
+          </p>
+          <p><em>What I learned:</em>  
+            Applying sensor-based automation in a real environment, creating control systems, and combining IoT with UI/UX and hardware prototyping.</p>
+          
+        </article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      &copy; 2025 Jens Geenen &middot;
+      <a href="mailto:Jens.geenen.03@gmail.com">Jens.geenen.03@gmail.com</a> &middot;
+      <a href="https://github.com/Jensgeenen" target="_blank">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/jens-geenen-9b2b41274/" target="_blank">LinkedIn</a>
+    </footer>
+  </div>
+</body>
+</html>
